@@ -2,7 +2,7 @@
   "homepage": "https://danielhott.github.io/AppFood",
   "name": "appfood",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@sheerun/mutationobserver-shim": "^0.3.3",
     "@testing-library/jest-dom": "^4.2.4",
@@ -24,12 +24,10 @@
     "websocket-extensions": ">=0.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "test-coverage": "react-scripts test --coverage --watchAll=false",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -49,8 +47,6 @@
   },
   "devDependencies": {
     "clipboardy": "^2.1.0",
-    "cypress": "^3.8.3",
-    "cypress-multi-reporters": "^1.4.0",
     "eslint": "6.8.0",
     "eslint-config-trybe-frontend": "1.2.0",
     "eslint-plugin-react-hooks": "^4.2.0",

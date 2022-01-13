@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, MemoryRouter } from 'react-router-dom';
 import RecipesAppProvider from './context/RecipesAppProvider';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,7 +19,7 @@ function App() {
   return (
     <RecipesAppProvider>
       <Router>
-        <Switch>
+        <MemoryRouter>
           <Route exact path="/" component={ Login } />
           <Route exact path="/perfil" component={ Perfil } />
           <Route exact path="/comidas" component={ Comidas } />
@@ -32,7 +32,7 @@ function App() {
           <Route path="/explorar/:id" component={ ExplorarSugestoes } />
           <Route exact path="/receitas-feitas" component={ ReceitasFeitas } />
           <Route path="/*" component={ NotFound } />
-        </Switch>
+        </MemoryRouter>
       </Router>
     </RecipesAppProvider>
   );
