@@ -1,0 +1,43 @@
+.input-login {
+  outline: none;
+  padding: 10px;
+}
+
+.background-login {
+  background-image: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  height: 100vh;
+  width: 100vw;
+}
+
+.button-login {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 7px;
+  width: 230px;
+}
+
+.button-login:enabled {
+  background-color: red;
+  border: none;
+  color: white;
+  display: flex;
+  font-family: Verdana , sans-serif;
+  margin-top: 7px;
+  width: 230px;
+}
+
+.login {
+  background-color: white;
+  border-radius: 15px;
+  color: rgb(43, 39, 39);
+  height: 300px;
+  left: 50%;
+  padding: 68px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+}
