@@ -15,6 +15,7 @@ import NotFound from './pages/NotFound';
 import ComidasEmProgresso from './pages/ComidasEmProgresso';
 import BebidasEmProgresso from './pages/BebidasEmProgresso';
 import ReceitasFeitas from './pages/ReceitasFeitas';
+
 function App() {
   return (
     <RecipesAppProvider>
@@ -31,7 +32,6 @@ function App() {
           <Route exact path="/explorar" component={ Explorar } />
           <Route path="/explorar/:id" component={ ExplorarSugestoes } />
           <Route exact path="/receitas-feitas" component={ ReceitasFeitas } />
-          <Route path="/*" component={ NotFound } />
         </MemoryRouter>
       </Router>
     </RecipesAppProvider>

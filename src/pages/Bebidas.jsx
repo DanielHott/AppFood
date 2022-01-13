@@ -13,7 +13,7 @@ export default function Bebidas() {
   const { drinks, setDrinksRequest, setDrinks, toggle } = useContext(RecipesAppContext);
   const [drinkDetails, setDrinkDetails] = useState({});
   const MAX_LENGTH_TITLE = 12;
-// a
+
   useEffect(() => {
     drinks.forEach(({ idDrink }) => {
       getDrinksById(idDrink)

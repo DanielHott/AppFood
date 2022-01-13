@@ -35,6 +35,7 @@ function Categories(
               className="category-img"
             />
             <p className="description">{strCategory}</p>
+            { console.log(`/${img}/${strCategory.replace(/\s+/g, '').replaceAll('/', '')}.png`) }
           </Link>
         ))
       }
