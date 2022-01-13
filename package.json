@@ -1,6 +1,6 @@
 {
-  "homepage": "https://danielhott.github.io/AppFood",
-  "name": "recipes-app-test",
+  "homepage": "https://danielhott.github.io/",
+  "name": "appfood",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
