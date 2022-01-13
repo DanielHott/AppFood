@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "./static/css/main.7168b3ae.chunk.css",
+    "main.js": "./static/js/main.12319a7a.chunk.js",
+    "main.js.map": "./static/js/main.12319a7a.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.5e8093d5.js",
+    "runtime-main.js.map": "./static/js/runtime-main.5e8093d5.js.map",
+    "static/css/2.389ceec1.chunk.css": "./static/css/2.389ceec1.chunk.css",
+    "static/js/2.09be1839.chunk.js": "./static/js/2.09be1839.chunk.js",
+    "static/js/2.09be1839.chunk.js.map": "./static/js/2.09be1839.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.3b8895cb5e556b60342b368ee2ba7a9a.js": "./precache-manifest.3b8895cb5e556b60342b368ee2ba7a9a.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.389ceec1.chunk.css.map": "./static/css/2.389ceec1.chunk.css.map",
+    "static/css/main.7168b3ae.chunk.css.map": "./static/css/main.7168b3ae.chunk.css.map",
+    "static/js/2.09be1839.chunk.js.LICENSE.txt": "./static/js/2.09be1839.chunk.js.LICENSE.txt",
+    "static/media/beer.png": "./static/media/beer.30e3e10b.png",
+    "static/media/blackHeartIcon.svg": "./static/media/blackHeartIcon.b8913346.svg",
+    "static/media/bussola.png": "./static/media/bussola.8eac531f.png",
+    "static/media/heart.png": "./static/media/heart.37f84db3.png",
+    "static/media/profileIcon.svg": "./static/media/profileIcon.74e487e5.svg",
+    "static/media/restaurant.png": "./static/media/restaurant.785b4453.png",
+    "static/media/shareIcon.svg": "./static/media/shareIcon.06215ed4.svg",
+    "static/media/whiteHeartIcon.svg": "./static/media/whiteHeartIcon.ea3b6ba8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e8093d5.js",
+    "static/css/2.389ceec1.chunk.css",
+    "static/js/2.09be1839.chunk.js",
+    "static/css/main.7168b3ae.chunk.css",
+    "static/js/main.12319a7a.chunk.js"
+  ]
+}
