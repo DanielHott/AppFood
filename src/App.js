@@ -15,7 +15,6 @@ import NotFound from './pages/NotFound';
 import ComidasEmProgresso from './pages/ComidasEmProgresso';
 import BebidasEmProgresso from './pages/BebidasEmProgresso';
 import ReceitasFeitas from './pages/ReceitasFeitas';
-
 function App() {
   return (
     <RecipesAppProvider>

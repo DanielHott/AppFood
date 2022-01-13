@@ -68,6 +68,8 @@ export default function Login({ history }) {
 }
 
 Login.propTypes = {
+  email: PropTypes.string.isRequired,
+  hash: PropTypes.string.isRequired,
   history: PropTypes.shape({
     push: PropTypes.func,
   }).isRequired,
