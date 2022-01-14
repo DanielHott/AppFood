@@ -58,7 +58,7 @@ function ReceitasFeitas() {
           if (categories === 'All' || recipe.type === categories) return true;
           return false;
         }).map((recipe, index) => (
-          <div key={ recipe.id }>
+          <div className="Receita-feita" key={ recipe.id }>
             <Link
               to={ recipe.type === 'comida'
                 ? `/comidas/${recipe.id}` : `/bebidas/${recipe.id}` }

@@ -30,7 +30,7 @@ function Categories(
             onClick={ () => setHooks(strCategory) }
           >
             <img
-              src={ `/${img}/${strCategory.replace(/\s+/g, '').replaceAll('/', '')}.png` }
+              src={ `${img}/${strCategory.replace(/\s+/g, '').replaceAll('/', '')}.png` }
               alt=""
               className="category-img"
             />

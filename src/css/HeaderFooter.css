@@ -27,3 +27,14 @@ header button {
   width: 100%;
 }
 
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio-select {
+  display: inline;
+  text-align: center;
+  margin-left: 3px;
+}

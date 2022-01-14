@@ -22,7 +22,7 @@ function CountriesCard() {
               }
             } }
           >
-            <img src={ `/Flags/${country}.png` } alt="" className="country-img" />
+            <img src={ `./Flags/${country}.png` } alt="" className="country-img" />
             <p className="description">{country}</p>
           </Link>
         ))}

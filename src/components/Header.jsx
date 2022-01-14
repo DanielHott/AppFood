@@ -16,6 +16,7 @@ function Header({ request, title }) {
   }
 
   return (
+    <>
     <header className="header">
       <button
         type="button"
@@ -29,18 +30,11 @@ function Header({ request, title }) {
         type="button"
         onClick={ setToggleInput }
         data-testid="search-top-btn"
-      >
+        >
         <img src={ searchIcon } alt="Profile Icon" />
       </button>
-
-      { toggle && (
-        <>
-          <input
-            type="text"
-            data-testid="search-input"
-            onChange={ (e) => setValues({ ...values, description: e.target.value }) }
-          />
-          <hr />
+        </header>
+        <div className="search" >
 
           <form
             onSubmit={ (event) => {
@@ -48,11 +42,26 @@ function Header({ request, title }) {
               request(values);
             } }
           >
-            <label htmlFor="ingredient-search-radio">
+            <input
+              type="text"
+              data-testid="search-input"
+              onChange={ (e) => setValues({ ...values, description: e.target.value }) }
+            />
+            <button
+              type="submit"
+              data-testid="exec-search-btn"
+              name="exec-btn"
+              value="Pesquisar"
+              style={ { backgroundColor: 'white', border: '2px outset white', height: '29px' } }
+            >
+              Pesquisar
+            </button>
+          <hr />
+            <label className="radio-select" htmlFor="ingredient-search-radio">
               <input
                 id="ingredient-search-radio"
+                className="radio-select"
                 type="radio"
-                style={ { display: 'block' } }
                 data-testid="ingredient-search-radio"
                 onChange={ (e) => setValues({ ...values, type: e.target.value }) }
                 name="method"
@@ -60,11 +69,11 @@ function Header({ request, title }) {
               />
               Ingrediente
             </label>
-            <label htmlFor="name-search-radio">
+            <label className="radio-select"htmlFor="name-search-radio">
               <input
                 id="name-search-radio"
+                className="radio-select"
                 type="radio"
-                style={ { display: 'block' } }
                 data-testid="name-search-radio"
                 onChange={ (e) => setValues({ ...values, type: e.target.value }) }
                 name="method"
@@ -72,11 +81,11 @@ function Header({ request, title }) {
               />
               Nome
             </label>
-            <label htmlFor="first-letter-search-radio">
+            <label className="radio-select" htmlFor="first-letter-search-radio">
               <input
                 id="first-letter-search-radio"
                 type="radio"
-                style={ { display: 'block' } }
+                className="radio-select"
                 data-testid="first-letter-search-radio"
                 onChange={ (e) => setValues({ ...values, type: e.target.value }) }
                 name="method"
@@ -84,18 +93,9 @@ function Header({ request, title }) {
               />
               Primeira letra
             </label>
-            <button
-              type="submit"
-              data-testid="exec-search-btn"
-              name="exec-btn"
-              value="Pesquisar"
-            >
-              Pesquisar
-            </button>
           </form>
-        </>
-      )}
-    </header>
+        </div>
+    </>
   );
 }
 

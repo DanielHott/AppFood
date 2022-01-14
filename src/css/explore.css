@@ -1,5 +1,6 @@
 * {
   font-family: Source Sans Pro , sans-serif;
+  background-color: f0f0f0;
 }
 
 .container-suggestion {
@@ -61,7 +62,7 @@
 
 .container-categories {
   display: flex;
-  height: 80px;
+  height: 90px;
   margin-top: 20px;
   overflow-x: auto;
   width: auto;
@@ -75,6 +76,10 @@
   position: relative;
   text-align: center;
   white-space: nowrap;
+}
+
+.container-categ {
+  margin-bottom: 50px;
 }
 
 .descript-categ {

@@ -12,8 +12,7 @@ function Perfil() {
   const hash = md5(email).toString();
   useEffect(() => {
     if (email) fetch(`https://www.gravatar.com/avatar/${hash}`).then((response) => setAvatar(response));
-  }, []);
-  console.log(avatar);
+  });
   return (
     <>
       <Header title="Perfil" />

@@ -37,6 +37,7 @@
   height: 500px;
   scroll-snap-align: start;
   width: 50%;
+  color: black;
 }
 
 .imagem {

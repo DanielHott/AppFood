@@ -49,6 +49,7 @@ function Explorar() {
       >
         <img src={ arrow } alt="" width="20px" />
       </button>
+      <div className="container-categ">
       <SuggestionCard />
       <h1 className="descript-categ">Categorias</h1>
       <h2 className="names-categ">Bebidas</h2>
@@ -72,6 +73,7 @@ function Explorar() {
         img="Dishes"
       />
       <CountriesCard />
+      </div>
       <Footer />
     </>
   );
